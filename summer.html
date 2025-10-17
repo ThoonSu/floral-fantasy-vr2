@@ -70,7 +70,7 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link"
                 aria-current="page"
                 href="index.html
               "
@@ -84,7 +84,9 @@
               <a class="nav-link" href="spring.html">Spring Collection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="summer.html">Summer Collection</a>
+              <a class="nav-link active" href="summer.html"
+                >Summer Collection</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="winter.html">Winter Collection</a>
@@ -109,121 +111,40 @@
   </header>
 
   <body>
-    <!-- welcome text -->
-    <section id="Welcome">
-      <h4>
-        Welcome to Floral Fantasy, where bouquets are not only filled with
-        flowers but also with love
-      </h4>
-    </section>
-    <br />
-    <!-- carousel -->
-    <div class="wide">
-      <!-- slider -->
-      <!-- indicators -->
-      <div id="slider" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#slider"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#slider"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#slider"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-
-        <!-- carousel inner -->
-        <div
-          id="myCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        ></div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/s1.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>The Art of the Sentimental Gift</h5>
-              <p>
-                Flowers are silent storytellers. Say "I love you,"
-                "Congratulations," or "Thinking of you" with a custom bouquet.
-                Stop looking—you just found the perfect gift.Flowers are silent
-                storytellers. Say "I love you," "Congratulations," or "Thinking
-                of you" with a custom bouquet.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/s2.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Your Daily Dose of Floral Therapy</h5>
-              <p>
-                Your home needs a mood boost. Bring nature indoors with our
-                fresh blooms and calming scents. It's the simplest, sweetest
-                form of self-care.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/s3.jpg" class="d-block w-100" alt="..." 0 />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Cultivating Beauty, One Stem at a Time</h5>
-              <p>
-                We're obsessed with freshness and quality. Each arrangement is
-                hand-selected and expertly designed to last longer and look
-                stunning. Experience the difference.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- prev btn -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#slider"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <!-- next btn -->
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#slider"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <!-- summer -->
+    <div class="summer">
+      <h1>Summer Collection</h1>
+      <p>
+        mbrace the longest, sunniest days of the year by transforming your home
+        and events with the vibrant, joyful spirit of the season with our
+        spectacular summer collection at Floral Fantasy. Forget the heavy tones
+        of autumn; our designers have curated arrangements that truly bottle the
+        heat, light, and energy of a perfect summer day. We meticulously select
+        the finest, brightest farm-fresh flowers, ensuring every petal captures
+        the height of summer's intensity. Our signature summer bouquets feature
+        an explosion of lush, full blooms, including fragrant, towering lilies,
+        cheerful golden sunflowers, stunning magenta zinnias, and brilliant blue
+        delphiniums, all expertly arranged with airy, cascading greens. Whether
+        you're hosting a backyard barbecue, planning a bright outdoor wedding,
+        or simply want to bring the feeling of a sun-drenched garden indoors,
+        our colorful arrangements offer a breathtaking focal point, perfectly
+        embodying the season’s carefree warmth and unparalleled vibrancy. Let
+        Floral Fantasy be your source for the most exuberant floral artistry
+        this summer.
+      </p>
     </div>
-
-    <!-- florist's picks -->
-    <section id="best">
-      <h1>Best Selling Bouquets</h1>
+    <!-- summer shop -->
+    <div class="summer-shop">
       <div class="row row-cols-1 row-cols-md-3 g-2">
         <div class="col">
           <div class="card h-100">
             <img
-              src="images/the pretty girl.jpg"
+              src="images/midsummer dreams.jpg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">The pretty girl set</h5>
+              <h5 class="card-title">Midsummer Dreams</h5>
               <div class="text-dark">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -231,24 +152,6 @@
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-half"></i>
               </div>
-              <p class="card-text">Pretty and elegant</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/purple.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Soft blooms beauty</h5>
-              <div class="text-dark">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-              </div>
-              <p class="card-text">The soft pure beauty</p>
               <a href="#" class="btn btn-primary">Buy</a>
             </div>
           </div>
@@ -256,12 +159,28 @@
         <div class="col">
           <div class="card h-100">
             <img
-              src="images/white bouquet.jpg"
+              src="images/lemonade splash.jpg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Angel's Petals</h5>
+              <h5 class="card-title">Lemonade Splash</h5>
+              <div class="text-dark">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Promise.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Golden Hour Glow</h5>
               <div class="text-dark">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -269,102 +188,66 @@
                 <i class="bi bi-star"></i>
                 <i class="bi bi-star"></i>
               </div>
-              <p class="card-text">Made with an angel's touch</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Lovesick.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lovesick</h5>
+              <div class="text-dark">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/highnoon hues.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Highnoon Hues</h5>
+              <div class="text-dark">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/A whisper.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">A Peaceful Whisper</h5>
+              <div class="text-dark">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
               <a href="#" class="btn btn-primary">Buy</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- reviews -->
-    <div class="reviews">
-      <h1>Customer Reviews</h1>
-      <p>
-        "Our Fantasy, Your Experience. Read the verified reviews and discover
-        why our customers choose Floral Fantasy for their most special moments."
-      </p>
-      <div class="row row-cols-1 row-cols-md-3 g-2">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/customer1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Lucy Bridgette</h5>
-              <div class="text-dark">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="card-text">
-                "I was so impressed when my Floral Fantasy bouquet arrived! The
-                presentation was beautiful, and the scent immediately filled the
-                room. The flowers themselves were incredibly fresh and vibrant,
-                much more stunning than the picture online. The designer clearly
-                paid attention to every detail—the colors and textures are
-                perfectly mixed. Three days later, the blooms are still opening
-                up beautifully! Thank you for the gorgeous piece of art; you
-                truly brightened my week. I will absolutely be ordering again."
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/customer2.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Jordan Pearson</h5>
-              <div class="text-dark">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-              </div>
-              <p class="card-text">
-                "I received the 'Midsummer Dream' bouquet this afternoon, and I
-                had to leave a review right away. Seriously, these are the
-                freshest flowers I have ever been sent! The sunflowers are
-                bright and huge, and the hydrangeas are crisp and vibrant—they
-                smell absolutely incredible. My delivery driver was very polite,
-                and the bouquet was carefully secured in the vase so there
-                wasn't a drop spilled. It looks exactly like a piece of art
-                straight out of a magazine. Floral Fantasy definitely lives up
-                to its name. I am already looking forward to seeing how long
-                this beautiful arrangement lasts!"
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/customer3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Ann Colby</h5>
-              <div class="text-dark">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-              </div>
-              <p class="card-text">
-                "My boyfriend sent me the 'April Rain' bouquet from Floral
-                Fantasy for our anniversary, and I am astonished by how long it
-                has lasted! It has been over a week, and the tulips and
-                hyacinths are still incredibly fresh and fragrant. Beyond the
-                quality of the blooms, their service was excellent. I received a
-                tracking notification, and the bouquet arrived exactly on time.
-                It's a gorgeous, meticulously arranged piece that truly brought
-                the springtime indoors. This is officially my go-to florist!"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
     <!-- footer section -->
     <footer class="bg-footer mt-5">
       <div class="container py-5">
