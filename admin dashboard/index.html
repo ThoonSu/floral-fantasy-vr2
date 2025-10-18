@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral Fantasy Admin Dashboard</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--  Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJdZ6g7y+y5b/8E5nFjL/h3wE/rI2F9Q+1B3N2/T5v/P1zK5z1q5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar d-flex flex-column">
+      <div class="navbar-brand text-center mb-4 p-3">
+        <h4 class="text-white fw-bold">
+          <i class="fas fa-flower me-2" style="color: var(--ff-accent)"></i>
+          <span class="d-none d-lg-inline">Floral Fantasy</span>
+        </h4>
+        <small class="text-white-50 d-none d-lg-inline">Admin Panel</small>
+      </div>
+
+      <!-- Navigation Links (Static) -->
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#dashboard-home" class="nav-link active" aria-current="page">
+            <i class="fas fa-home me-2"></i>
+            <span class="d-none d-lg-inline">Dashboard Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#orders" class="nav-link">
+            <i class="fas fa-receipt me-2"></i>
+            <span class="d-none d-lg-inline">Order Management</span>
+          </a>
+        </li>
+        <li>
+          <a href="#products" class="nav-link">
+            <i class="fas fa-box me-2"></i>
+            <span class="d-none d-lg-inline">Product Catalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="#customers" class="nav-link">
+            <i class="fas fa-users me-2"></i>
+            <span class="d-none d-lg-inline">Customer List</span>
+          </a>
+        </li>
+        <li>
+          <a href="#reports" class="nav-link">
+            <i class="fas fa-chart-line me-2"></i>
+            <span class="d-none d-lg-inline">Sales Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#settings" class="nav-link">
+            <i class="fas fa-cog me-2"></i>
+            <span class="d-none d-lg-inline">Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <hr class="mx-3 border-light" />
+
+      <div class="p-3 text-center">
+        <small class="text-white-50">Logged in as Administrator</small>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header-card">
+        <h1 class="h2 fw-light">Welcome Back, Administrator!</h1>
+        <p class="mb-0 fs-5 text-white-50">
+          Floral Fantasy Dashboard | October 2025
+        </p>
+      </div>
+
+      <!-- Section 1: Dashboard Home -->
+      <section id="dashboard-home" class="mb-5 pt-3">
+        <h2 class="h3 mb-4 text-secondary">
+          <i class="fas fa-home me-2"></i>Dashboard Overview
+        </h2>
+        <div class="row">
+          <!-- Stat Card 1 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card stat-card p-3">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase">
+                  Today's Orders
+                </h5>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-truck-moving fa-2x me-3"
+                    style="color: var(--ff-purple-main)"
+                  ></i>
+                  <h2 class="display-6 fw-bold mb-0">27</h2>
+                </div>
+                <p class="card-text text-success mt-1">
+                  <small>+15% from yesterday</small>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Card 2 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card stat-card p-3">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase">
+                  Total Sales (Mo)
+                </h5>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-dollar-sign fa-2x me-3"
+                    style="color: var(--ff-purple-main)"
+                  ></i>
+                  <h2 class="display-6 fw-bold mb-0">$12,450</h2>
+                </div>
+                <p class="card-text text-success mt-1">
+                  <small>+5.2% from last month</small>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Card 3 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card stat-card p-3">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase">
+                  Low Stock Items
+                </h5>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-exclamation-triangle fa-2x me-3 text-warning"
+                  ></i>
+                  <h2 class="display-6 fw-bold mb-0">4</h2>
+                </div>
+                <p class="card-text text-danger mt-1">
+                  <small>Requires immediate restock</small>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Card 4 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card stat-card p-3">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase">
+                  New Customers
+                </h5>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-user-plus fa-2x me-3"
+                    style="color: var(--ff-purple-main)"
+                  ></i>
+                  <h2 class="display-6 fw-bold mb-0">68</h2>
+                </div>
+                <p class="card-text text-success mt-1">
+                  <small>This week</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Activity Panel -->
+        <div class="card">
+          <div class="card-header bg-white">
+            <h5 class="mb-0 text-dark">Recent Order Activity</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Order #FF-345 <span class="badge bg-success">Completed</span>
+                <small class="text-muted">1 hour ago</small>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Order #FF-346
+                <span class="badge bg-warning text-dark">Processing</span>
+                <small class="text-muted">30 minutes ago</small>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Order #FF-347
+                <span class="badge bg-info text-dark">Shipped</span>
+                <small class="text-muted">5 minutes ago</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5 border-secondary" />
+
+      <!-- Section 2: Order Management -->
+      <section id="orders" class="mb-5 pt-3">
+        <h2 class="h3 mb-4 text-secondary">
+          <i class="fas fa-receipt me-2"></i>Order Management
+        </h2>
+        <div class="card">
+          <div
+            class="card-header bg-white d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0 text-dark">Pending Orders (5)</h5>
+            <a href="#" class="btn btn-sm btn-ff-primary">View All Orders</a>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Action (Static Link)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>FF-348</td>
+                    <td>Jane Doe</td>
+                    <td>2025-10-18</td>
+                    <td>$75.00</td>
+                    <td><span class="badge bg-danger">Pending</span></td>
+                    <td>
+                      <a href="#" class="text-decoration-none text-info"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>FF-347</td>
+                    <td>Robert Smith</td>
+                    <td>2025-10-17</td>
+                    <td>$120.50</td>
+                    <td>
+                      <span class="badge bg-warning text-dark"
+                        >Ready for Ship</span
+                      >
+                    </td>
+                    <td>
+                      <a href="#" class="text-decoration-none text-info"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>FF-346</td>
+                    <td>Emily Brown</td>
+                    <td>2025-10-17</td>
+                    <td>$45.00</td>
+                    <td><span class="badge bg-success">Completed</span></td>
+                    <td>
+                      <a href="#" class="text-decoration-none text-info"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5 border-secondary" />
+
+      <!-- Section 3: Product Catalog -->
+      <section id="products" class="mb-5 pt-3">
+        <h2 class="h3 mb-4 text-secondary">
+          <i class="fas fa-box me-2"></i>Product Catalog
+        </h2>
+        <div class="row">
+          <!-- Product Card 1 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-ff-primary fw-bold">
+                  Lavender Dreams Bouquet
+                </h5>
+                <p class="card-text text-muted mb-2">SKU: LDB-001</p>
+                <p class="card-text fs-4 fw-bold text-success">$59.99</p>
+                <span class="badge bg-primary">In Stock: 50</span>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary mt-3 float-end"
+                  >Edit</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-ff-primary fw-bold">
+                  Pink Rose Delight
+                </h5>
+                <p class="card-text text-muted mb-2">SKU: PRD-005</p>
+                <p class="card-text fs-4 fw-bold text-success">$89.00</p>
+                <span class="badge bg-danger">Low Stock: 5</span>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary mt-3 float-end"
+                  >Edit</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-ff-primary fw-bold">
+                  Custom Arrangement
+                </h5>
+                <p class="card-text text-muted mb-2">SKU: CUST-999</p>
+                <p class="card-text fs-4 fw-bold text-success">Varies</p>
+                <span class="badge bg-secondary">Service</span>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary mt-3 float-end"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-ff-primary rounded-pill"
+          ><i class="fas fa-plus me-2"></i>Add New Product</a
+        >
+      </section>
+
+      <hr class="my-5 border-secondary" />
+
+      <!-- Section 4: Customer List -->
+      <section id="customers" class="mb-5 pt-3">
+        <h2 class="h3 mb-4 text-secondary">
+          <i class="fas fa-users me-2"></i>Customer List
+        </h2>
+        <div class="card">
+          <div class="card-header bg-white">
+            <h5 class="mb-0 text-dark">Recent Signups</h5>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Joined</th>
+                    <th>Total Orders</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CUS-1015</td>
+                    <td>Mark Benson</td>
+                    <td>mark@gmail.com</td>
+                    <td>2025-10-17</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>CUS-1014</td>
+                    <td>Lisa Chen</td>
+                    <td>lisa@gmail.com</td>
+                    <td>2025-10-15</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>CUS-1013</td>
+                    <td>David Kim</td>
+                    <td>david@gmail.com</td>
+                    <td>2025-10-12</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5 border-secondary" />
+
+      <!--  Sales Reports (Mock Data) -->
+      <section id="reports" class="mb-5 pt-3">
+        <h2 class="h3 mb-4 text-secondary">
+          <i class="fas fa-chart-line me-2"></i>Sales Reports
+        </h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Monthly Revenue Summary (Mock Chart Placeholder)
+            </h5>
+            <div
+              class="text-center p-5 bg-light rounded-3 text-muted border border-ff-purple-light"
+            >
+              <p class="mt-3">
+                A chart would display here to visualize the sales data.
+              </p>
+              <ul
+                class="list-unstyled d-flex justify-content-around mt-3 fw-bold"
+              >
+                <li>Jan: $8k</li>
+                <li>Feb: $9k</li>
+                <li>Mar: $11k</li>
+                <li>Apr: $12.4k</li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h6>Key Metrics (YTD)</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between">
+                  Average Order Value: <span>$65.80</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  Top Selling Item: <span>"Romantic Dozen Roses"</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  Conversion Rate: <span>3.2%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5 border-secondary" />
+
+      <!-- Settings -->
+      <section id="settings" class="mb-5 pt-3">
+        <h2 class="h3 mb-4 text-secondary">
+          <i class="fas fa-cog me-2"></i>Settings & Configuration
+        </h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Shop Information</h5>
+            <form>
+              <div class="mb-3">
+                <label for="shopName" class="form-label">Shop Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="shopName"
+                  value="Floral Fantasy"
+                  readonly
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Contact Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  value="admin@floralfantasy.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="currency" class="form-label"
+                  >Default Currency</label
+                >
+                <select class="form-select" id="currency">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>GBP</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-ff-primary">
+                Save Settings
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Main Content -->
+  </body>
+</html>
